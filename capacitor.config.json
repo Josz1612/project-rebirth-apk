@@ -1,0 +1,12 @@
+{
+  "appId": "com.projectrebirth.game",
+  "appName": "Project Rebirth",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
+

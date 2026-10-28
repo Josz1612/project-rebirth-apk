@@ -1,0 +1,6 @@
+{
+  "name": "PROJECT_REBIRTH - Nave Espacial & Sigilo",
+  "description": "Juego 2D top-down de sigilo y supervivencia espacial. Explora las habitaciones de la nave, esquiva a los 8 aliens patrullando con A*, completa 4 misiones únicas sin repetición y evacúa en el Transbordador Espacial Endeavour de la NASA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

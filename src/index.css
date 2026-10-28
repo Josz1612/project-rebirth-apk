@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+    background-color: #020617;
+    color: #f1f5f9;
+  }
+
+  body {
+    font-family: 'Fredoka', 'Chakra Petch', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+  }
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', monospace, sans-serif;
+}
+
+.font-pixel {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Mobile dynamic viewport compatibility so full-screen UI never clips under system bars */
+@supports (height: 100dvh) {
+  .h-screen {
+    height: 100dvh;
+  }
+  .min-h-screen {
+    min-height: 100dvh;
+  }
+}
+
+/* Prevent accidental pull to refresh / zooming in game canvas & cinematic videos */
+canvas,
+video {
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
